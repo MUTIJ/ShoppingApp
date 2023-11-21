@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "756990734809",
+    "firebase_url": "https://home-app-846e3-default-rtdb.firebaseio.com",
+    "project_id": "home-app-846e3",
+    "storage_bucket": "home-app-846e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756990734809:android:bdb983dccb8a1ed1d069c8",
+        "android_client_info": {
+          "package_name": "com.hez.shopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756990734809-4ibbmtrs8o15kgpvfd4v9aagct604kr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQSbq-el7hi-ggTUZ8cZNPmYNk2yqNnhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756990734809-4ibbmtrs8o15kgpvfd4v9aagct604kr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

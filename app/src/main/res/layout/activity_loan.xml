@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewHolder.Loan"
+    android:background="@drawable/background">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+  <!-- Title and Introduction -->
+  <TextView
+      android:id="@+id/titleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Loan Request"
+      android:layout_gravity="center"
+      android:textStyle="bold"
+      android:textSize="24sp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp" />
+
+  <!-- Personal Information Section -->
+  <LinearLayout
+      android:id="@+id/personalInfoLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@id/titleTextView"
+      android:layout_marginTop="16dp">
+
+   <!-- Full Name -->
+   <EditText
+       android:id="@+id/fullNameEditText"
+       android:layout_width="match_parent"
+       android:layout_gravity="center"
+       android:layout_height="wrap_content"
+       android:hint="Full Name"
+       android:inputType="textPersonName" />
+
+   <!-- Date of Birth -->
+   <EditText
+       android:id="@+id/dobEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Date of Birth"
+       android:inputType="date" />
+
+   <!-- Contact Information -->
+   <EditText
+       android:id="@+id/contactEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Contact Information"
+       android:inputType="phone" />
+
+   <!-- Job Information -->
+   <EditText
+       android:id="@+id/jobEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Job Information"
+       android:inputType="text" />
+
+  </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/iDupload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="ID front"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/baseline_photo_camera_back_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="ID back"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/baseline_photo_camera_back_24"/>
+    </LinearLayout>
+
+
+
+  <LinearLayout
+      android:id="@+id/loanDetailsLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@id/personalInfoLayout"
+      android:layout_marginTop="16dp">
+
+
+   <EditText
+       android:id="@+id/amountEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Amount Requested"
+       android:inputType="numberDecimal" />
+
+
+   <Spinner
+       android:id="@+id/loanPurposeSpinner"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Loan Purpose" />
+
+   <!-- Loan Term -->
+   <Spinner
+       android:id="@+id/loanTermSpinner"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Loan Term" />
+
+  </LinearLayout>
+
+  <!-- Financial Information Section -->
+  <LinearLayout
+      android:id="@+id/financialInfoLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@id/loanDetailsLayout"
+      android:layout_marginTop="16dp">
+
+   <!-- Monthly Expenses -->
+   <EditText
+       android:id="@+id/expensesEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Monthly Expenses"
+       android:inputType="numberDecimal" />
+
+   <!-- Additional Income -->
+   <EditText
+       android:id="@+id/incomeEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Additional Income"
+       android:inputType="numberDecimal" />
+
+  </LinearLayout>
+
+  <!-- Employment and Income Verification Section -->
+  <!-- Include relevant fields for document upload -->
+
+  <!-- Terms and Conditions Section -->
+  <LinearLayout
+      android:id="@+id/termsLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@id/financialInfoLayout"
+      android:layout_marginTop="16dp">
+
+   <!-- Display terms and conditions -->
+   <TextView
+       android:id="@+id/termsTextView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Terms and Conditions" />
+
+   <!-- Checkbox for user agreement -->
+   <CheckBox
+       android:id="@+id/termsCheckBox"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="I agree to the terms and conditions" />
+
+  </LinearLayout>
+
+  <!-- Submit Button -->
+  <Button
+      android:id="@+id/submitButton"
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Submit"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp"
+      android:layout_below="@id/termsLayout" />
+
+  <!-- Confirmation Screen (optional) -->
+  <!-- Include relevant views for displaying confirmation information -->
+</LinearLayout>
+ </ScrollView>
+
